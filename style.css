@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #535353;
+}
+
+div#container {
+  background-color: #fff;
+  width: 50%;
+  height: 60vh;
+  margin: 5vh auto;
+  display: flex;
+}
