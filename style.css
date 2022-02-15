@@ -8,10 +8,18 @@ body {
   background-color: #535353;
 }
 
+button#reset-grid-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  display: block;
+  margin: 5vh auto;
+  border: #fff;
+}
+
 div#container {
   background-color: #fff;
   width: 50%;
   height: 60vh;
-  margin: 5vh auto;
+  margin: 20vh auto;
   display: flex;
 }
