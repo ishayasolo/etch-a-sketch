@@ -14,12 +14,13 @@ button#reset-grid-btn {
   display: block;
   margin: 5vh auto;
   border: #fff;
+  font-weight: bold;
 }
 
 div#container {
   background-color: #fff;
   width: 400px;
   height: 400px;
-  margin: 20vh auto;
+  margin: 5vh auto;
   display: flex;
 }

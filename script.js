@@ -11,10 +11,30 @@ container.addEventListener('mouseover', (e) => {
 
 let numberOfGrids = 16;
 
-for (let i = 0; i < numberOfGrids; i++) {
-  superDiv.appendChild(subDiv.cloneNode(true));
+const createPad = (numberOfGrids) => {
+  for (let i = 0; i < numberOfGrids; i++) {
+    superDiv.appendChild(subDiv.cloneNode(true));
+  }
+  
+  for (let i = 0; i < numberOfGrids; i++) {
+    container.appendChild(superDiv.cloneNode(true));
+  }
 }
 
-for (let i = 0; i < numberOfGrids; i++) {
-  container.appendChild(superDiv.cloneNode(true));
-}
+createPad();
+
+const resetBtn = document.getElementById('reset-grid-btn');
+resetBtn.addEventListener('click', () => {
+  numberOfGrids = prompt('how many grids would you like?');
+
+  superDiv.textContent = '';
+  container.textContent = '';
+  if (numberOfGrids > 16 && numberOfGrids <= 100) {
+    createPad(numberOfGrids);
+  } else {
+    while (numberOfGrids <= 16 || numberOfGrids > 100) {
+      numberOfGrids = prompt('grid size cannot exceed 100x100 and cannot be below 16x16\nhow many grids would you like?');
+    }
+    createPad(numberOfGrids);
+  }
+});
