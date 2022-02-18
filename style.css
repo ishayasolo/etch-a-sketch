@@ -18,8 +18,8 @@ button#reset-grid-btn {
 
 div#container {
   background-color: #fff;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   margin: 20vh auto;
   display: flex;
 }
