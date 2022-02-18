@@ -21,7 +21,7 @@ const createPad = (numberOfGrids) => {
   }
 }
 
-createPad();
+createPad(numberOfGrids);
 
 const resetBtn = document.getElementById('reset-grid-btn');
 resetBtn.addEventListener('click', () => {
